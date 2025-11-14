@@ -1,14 +1,14 @@
 class PessoaTeste extends Pessoa {
-
+    public PessoaTeste(String nome, String cpf, int idade) {
+        super(nome, cpf, idade);
+    }
 }
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Teste q. 1 e 2(classe pessoa)");
 
-        PessoaTeste beatriz = new PessoaTeste();
-        beatriz.setNome("Beatriz Abreu");
-        beatriz.setIdade(28);
+        PessoaTeste beatriz = new PessoaTeste("Beatriz Abreu", "000.000.000-00",28);
 
         System.out.println("Nome: " + beatriz.getNome());
         System.out.println("Idade inicial: " + beatriz.getIdade());
@@ -19,29 +19,33 @@ public class Main {
 
         System.out.println("---------------");
 
-        Disciplina poo = new Disciplina();
-        poo.setNomeDisciplina("Programação Orientada a Objetos");
-        poo.setCodigo(685);
+        Disciplina poo = new Disciplina("Matemática", "685","2025.2");
 
-        System.out.println("Disciplina: " + poo.getNomeDisciplina());
+        System.out.println("Disciplina: " + poo.getNome());
         System.out.println("Código: " + poo.getCodigo());
+        System.out.println("Semestre: " + poo.getSemestre());
 
-        Aluno novoAluno = new Aluno();
-        novoAluno.setNome("Beatriz");
+        System.out.println("---------------");
+
+        Aluno novoAluno = new Aluno("Paula", "111.111.111-11",30,"xxxx-x");
         novoAluno.pagarMensalidade();      
+
+        System.out.println("---------------");
         
-        AlunoRegular novoAlunoRegular = new AlunoRegular();
-        novoAlunoRegular.setNome("Paula");
+        AlunoRegular novoAlunoRegular = new AlunoRegular("Maria","222.222.222-22",25,"000000-0");
         novoAlunoRegular.pagarMensalidade();
 
-        AlunoBolsista novoBolsista = new AlunoBolsista();
-        novoBolsista.setNome("Pedro");
+        System.out.println("---------------");
+
+        AlunoBolsista novoBolsista = new AlunoBolsista("João","333.333.333-33",22,"zzzz-z");
         novoBolsista.pagarMensalidade();
 
-        Professor novoProfessor = new Professor ();
-        novoProfessor.setNome("Matheus");
-        novoProfessor.setCentro("Matemática");
+        System.out.println("---------------");
+
+        Professor novoProfessor = new Professor ("Matheus","555.555.555-55",35,"Matemática");
         novoProfessor.darAula();
+
+        System.out.println("---------------");
 
     }
     
