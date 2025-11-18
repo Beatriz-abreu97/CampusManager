@@ -3,7 +3,6 @@ public class Aluno extends Pessoa {
 
     public Aluno(String nome, String cpf, int idade, String matricula) {
         super(nome, cpf, idade);
-        this.matricula = matricula;
     }
 
     public String getMatricula() {
@@ -11,7 +10,7 @@ public class Aluno extends Pessoa {
     }
     
     public void setMatricula(String matricula) {
-    this.matricula = matricula;
+        this.matricula = matricula;
     }
 
     public void pagarMensalidade() {
