@@ -1,18 +1,14 @@
-## Getting Started
+📚 Sistema de Gerenciamento de Turmas – Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto implementa um sistema simples para gerenciamento de pessoas, disciplinas e turmas acadêmicas, utilizando os princípios fundamentais de Programação Orientada a Objetos (POO).
+O objetivo é demonstrar organização de código, modelagem de classes e aplicação prática de herança, polimorfismo, encapsulamento e composição.
 
-## Folder Structure
+✨ Funcionalidades:
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Cadastro de pessoas (alunos, bolsistas, professores e visitantes)
+- Associação de disciplina e professor a uma turma
+- Matrícula e remoção de alunos
+- Listagem de alunos pertencentes a cada turma
+- Métodos específicos por tipo de pessoa
+    Ex.: pagamento de mensalidade, ação de ministrar aula
+- Estrutura orientada a objetos bem definida e modular
