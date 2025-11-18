@@ -1,35 +1,36 @@
 public class Disciplina {
-    private String nome;
-    private String codigo;
-    private String semestre;
+  private String nome;
+  private String codigo;
+  private String semestre;
 
-    public Disciplina(String nome, String codigo, String semestre) {
-        this.nome = nome;
-        this.codigo = codigo;
-        this.semestre = semestre;
-    }
+  public Disciplina(String nome, String codigo, String semestre) {
 
-    public String getNome() {
-        return nome;
-    }
+    this.nome = nome;
+    this.codigo = codigo;
+    this.semestre = semestre;
+  }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+  public String getNome() {
+    return nome;
+  }
 
-    public String getCodigo() {
-        return codigo;
-    }
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
+  public String getCodigo() {
+    return codigo;
+  }
 
-    public String getSemestre() {
-        return semestre;
-    }
+  public void setCodigo(String codigo) {
+    this.codigo = codigo;
+  }
 
-    public void setSemestre(String semestre) {
-        this.semestre = semestre;
-    }
+  public String getSemestre() {
+    return semestre;
+  }
+
+  public void setSemestre(String semestre) {
+    this.semestre = semestre;
+  }
 }

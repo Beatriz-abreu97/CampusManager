@@ -1,21 +1,27 @@
-public class Turma extends Pessoa {
+import java.util.ArrayList;
+
+public class Turma {
   private String codigo;
   private Disciplina Disciplina;
   private Professor professor;
+  private ArrayList<Aluno> alunos;
 
-  Turma(String nome, String cpf, int idade, String codigo, Disciplina Disciplina,
-      Professor professor) {
-    super(nome, cpf, idade);
+  Turma(String codigo, Disciplina Disciplina, Professor professor, Aluno alunos) {
+
     this.codigo = codigo;
     this.Disciplina = Disciplina;
     this.professor = professor;
+    this.alunos = new ArrayList<>();
   }
 
-  public void adicionarAluno() {}
+  public void adicionarAluno(Aluno aluno) {
+    alunos.add(aluno);
+    System.out.println("Aluno(a) " + aluno.getNome() + " Adicionado");
+  }
 
-  public void removerAluno() {}
+  public void removerAluno(Aluno aluno) {}
 
-  public void listarAluno() {}
+  public void listarAluno(Aluno aluno) {}
 
   public String getCodigo() {
     return codigo;
