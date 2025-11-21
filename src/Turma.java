@@ -2,16 +2,16 @@ import java.util.ArrayList;
 
 public class Turma {
     private String codigo;
-    private Disciplina Disciplina;
+    private Disciplina disciplina;
     private Professor professor;
-    private ArrayList<Aluno> alunos;
+    private ArrayList<Aluno> alunos = new ArrayList<>();
 
-    Turma(String codigo, Disciplina Disciplina, Professor professor, Aluno alunos) {
+    Turma(String codigo, Disciplina disciplina, Professor professor) {
 
         this.codigo = codigo;
-        this.Disciplina = Disciplina;
+        this.disciplina = disciplina;
         this.professor = professor;
-        this.alunos = new ArrayList<>();
+
     }
 
     public void adicionarAluno(Aluno aluno) {
@@ -28,7 +28,17 @@ public class Turma {
         System.out.println("Aluno(a) " + aluno.getNome() + " Removido.");
     }
 
-    public void listarAluno(Aluno aluno) {
+    public void listarAlunos() {
+        System.out.println("----- INFORMAÇÕES DA TURMA -----");
+        System.out.println("Código da turma: " + this.codigo);
+        System.out.println("Professor da turma: " + professor.getNome());
+        System.out.println("Disciplina da turma: " + disciplina.getNome());
+        System.out.println("Alunos matriculados nesta turma: ");
+        for (Aluno aluno : alunos) {
+            System.out.println(aluno.getNome());
+        }
+        System.out.println("----- FIM DAS INFORMAÇÕES DA TURMA -----");
+        System.out.println();
     }
 
     public String getCodigo() {
@@ -40,22 +50,26 @@ public class Turma {
     }
 
     public Disciplina getDisciplina() {
-        return Disciplina;
+        return disciplina;
     }
 
     public void setDisciplina(Disciplina disciplina) {
-
-        Disciplina = disciplina;
+        this.disciplina = disciplina;
     }
 
     public Professor getProfessor() {
-
         return professor;
     }
 
     public void setProfessor(Professor professor) {
-
         this.professor = professor;
     }
 
+    public ArrayList<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(ArrayList<Aluno> alunos) {
+        this.alunos = alunos;
+    }
 }

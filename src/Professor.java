@@ -11,7 +11,7 @@ public class Professor extends Pessoa {
     }
 
     public void setCentro(String centro) {
-    this.centro = centro;
+        this.centro = centro;
     }
 
     public void darAula() {
