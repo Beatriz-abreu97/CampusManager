@@ -18,14 +18,12 @@ public class Turma {
         if (!alunos.contains(aluno)) {
             alunos.add(aluno);
         }
-        System.out.println("Aluno(a) " + aluno.getNome() + " Adicionado.");
     }
 
     public void removerAluno(Aluno aluno) {
         if (alunos.contains(aluno)) {
             alunos.remove(aluno);
         }
-        System.out.println("Aluno(a) " + aluno.getNome() + " Removido.");
     }
 
     public void listarAlunos() {
