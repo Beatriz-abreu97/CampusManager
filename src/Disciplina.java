@@ -9,13 +9,6 @@ public class Disciplina {
         this.semestre = semestre;
     }
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public String getCodigo() {
         return codigo;
@@ -32,4 +25,15 @@ public class Disciplina {
     public void setSemestre(String semestre) {
         this.semestre = semestre;
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
 }
