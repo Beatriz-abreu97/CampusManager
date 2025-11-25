@@ -1,66 +1,38 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Instancia de 3 objetos disciplina
-        Disciplina poo = new Disciplina("Progamação Orientada a Objetos", "123", "2025.2");
-        Disciplina rla = new Disciplina("Raciocinio lógico algoritmo", "321", "2025.2");
-        Disciplina fundamentos = new Disciplina("Fundamentos", "432", "2025.2");
+        Disciplina d1 = new Disciplina("POO", "1", "2º semestre");
+        Disciplina d2 = new Disciplina("Raciocínio Lógico", "2", "1º semestre");
+        Disciplina d3 = new Disciplina("Java", "3", "3º semestre");
 
-        // Instancia de 3 objetos alunos2 (2regulares e 1 bolsista);
-        Aluno aluno1 = new Aluno("Beatriz Abreu", "000-000-000-00", 23, "123");
-        Aluno aluno2 = new Aluno("Vagner Moura", "123-321-456-65", 40, "4235324");
-        Aluno aluno3 = new Aluno("Michael Jackson", "345-234-543-34", 35, "3453534");
+        AlunoRegular r1 = new AlunoRegular("João", "963.300.930-83", 20, "25");
+        AlunoRegular r2 = new AlunoRegular("Maria", "125.429.660-36", 22, "26");
 
-        // Instancia de 1 objeto Professor
-        Professor professor1 = new Professor("Adriano Nunes", "123-432-234-54", 40, "Tecnologico");
+        AlunoBolsista b1 = new AlunoBolsista("Pedro", "377.347.030-46", 25, "27");
 
-        // Instancia de 2 objeto Visitantes
-        Visitante visitante1 = new Visitante("Frascisco Emanuel", "845-345-234-65", 19);
-        Visitante visitante2 = new Visitante("Antonio Edgar ", "232-321-432-54", 33);
-        // Instancia de 3 objetos turma, contendo todos os alunos, o professor e 1
-        // disciplina em cada
-        // turma criada;
+        Professor p1 = new Professor("Carlos", "155.588.350-87", 38, "Campus A");
 
+        Visitante v1 = new Visitante("Leo", "848.208.930-76", 31);
+        Visitante v2 = new Visitante("Yara", "343.494.490-78", 27);
 
-        System.out.println("Teste q. 1 e 2(classe pessoa)");
+        Turma t1 = new Turma("1", d1, p1);
+        t1.adicionarAluno(r1);
+        t1.adicionarAluno(r2);
+        t1.adicionarAluno(b1);
 
+        Turma t2 = new Turma("2", d2, p1);
+        t2.adicionarAluno(r1);
+        t2.adicionarAluno(r2);
+        t2.adicionarAluno(b1);
 
-        System.out.println("Nome: " + aluno2.getNome());
-        System.out.println("Idade inicial: " + aluno2.getIdade());
+        Turma t3 = new Turma("3", d3, p1);
+        t3.adicionarAluno(r1);
+        t3.adicionarAluno(r2);
+        t3.adicionarAluno(b1);
 
-        aluno1.fazerAniversario();
-
-        System.out.println("Nova idade:" + aluno2.getIdade());
-
-        System.out.println("---------------");
-
-        // Disciplina poo = new Disciplina("Matemática", "685", "2025.2");
-
-        System.out.println("Disciplina: " + poo.getNome());
-        System.out.println("Código: " + poo.getCodigo());
-        System.out.println("Semestre: " + poo.getSemestre());
-
-        System.out.println("---------------");
-
-        Aluno novoAluno = new Aluno("Paula", "111.111.111-11", 30, "xxxx-x");
-        novoAluno.pagarMensalidade();
-
-        System.out.println("---------------");
-
-        AlunoRegular novoAlunoRegular = new AlunoRegular("Maria", "222.222.222-22", 25, "000000-0");
-        novoAlunoRegular.pagarMensalidade();
-
-        System.out.println("---------------");
-
-        AlunoBolsista novoBolsista = new AlunoBolsista("João", "333.333.333-33", 22, "zzzz-z");
-        novoBolsista.pagarMensalidade();
-
-        System.out.println("---------------");
-
-        Professor novoProfessor = new Professor("Matheus", "555.555.555-55", 35, "Matemática");
-        novoProfessor.darAula();
-
-        System.out.println("---------------");
+        t1.listarAlunos();
+        t2.listarAlunos();
+        t3.listarAlunos();
 
     }
 

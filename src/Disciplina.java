@@ -9,7 +9,6 @@ public class Disciplina {
         this.semestre = semestre;
     }
 
-
     public String getCodigo() {
         return codigo;
     }
