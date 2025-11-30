@@ -33,12 +33,6 @@ public class Main {
         t1.listarAlunos();
         t2.listarAlunos();
         t3.listarAlunos();
-
-        Professor.darAula();
-        AlunoBolsista.pagarMensalidade();
-        AlunoRegular.pagarMensalidade();
-        Visitante.visitar();
-
     }
 
 }
